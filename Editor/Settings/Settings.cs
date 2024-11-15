@@ -24,11 +24,10 @@ namespace Wakatime
         [Setting("WakaTime/LogLevel")]
         public LogLevels LogLevel { get; set; } = LogLevels.Informational;
 
-
-
+        [Setting("WakaTime/ApiUri")]
+        public string ApiUri { get; set; } = "https://api.wakatime.com/api/v1/";
 
         public string ProjectName => Application.productName;
-        public string ApiUri => "https://api.wakatime.com/api/v1/";
         public TimeSpan HeartbeatFrequency => TimeSpan.FromMinutes(2);
 
 

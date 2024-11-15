@@ -41,6 +41,8 @@ namespace Wakatime
                 EditorGUILayout.EndHorizontal();
 
                 
+                settings.ApiUri = EditorGUILayout.TextField("API URL", settings.ApiUri);
+
                 //settings.ClientOptions = (ClientTypes)EditorGUILayout.EnumPopup("Client options", settings.ClientOptions);
 
                 if (GUILayout.Button("Open dashboard"))
